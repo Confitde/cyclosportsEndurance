@@ -113,4 +113,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- 4. Welcome Popup ---
+    const welcomePopup = document.getElementById('welcomePopup');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+
+    if (welcomePopup && closePopupBtn) {
+        // Show popup shortly after load
+        setTimeout(() => {
+            welcomePopup.classList.add('show');
+            // Prevent scrolling when popup is open
+            document.body.style.overflow = 'hidden';
+        }, 500);
+
+        // Close popup
+        closePopupBtn.addEventListener('click', () => {
+            welcomePopup.classList.remove('show');
+            // Restore scrolling
+            document.body.style.overflow = '';
+        });
+    }
+
 });
