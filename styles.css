@@ -117,8 +117,8 @@ h2 span {
 
 .btn-primary:hover {
     background-color: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(235, 255, 0, 0.3);
+    transform: scale(1.03) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(235, 255, 0, 0.4);
 }
 
 .btn-secondary {
@@ -130,6 +130,9 @@ h2 span {
 .btn-secondary:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
+    transform: scale(1.03) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(235, 255, 0, 0.1);
+    background-color: rgba(235, 255, 0, 0.05);
 }
 
 /* Pulse Animation for CTA */
@@ -310,8 +313,8 @@ h2 span {
 }
 
 .event-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     border-color: rgba(235, 255, 0, 0.4);
 }
 
@@ -477,8 +480,9 @@ h2 span {
 }
 
 .feature-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px) scale(1.01);
     border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 .feature-icon {
