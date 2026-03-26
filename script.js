@@ -133,4 +133,61 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- 5. Gallery Carousel ---
+    const galleryTrack = document.getElementById('galleryTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const carouselIndicators = document.getElementById('carouselIndicators');
+
+    if (galleryTrack && carouselIndicators) {
+        const galleryItems = galleryTrack.querySelectorAll('.gallery-item');
+        let dots = [];
+
+        // Create indicator dots
+        galleryItems.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('carousel-dot');
+            if (index === 0) dot.classList.add('active');
+            
+            dot.addEventListener('click', () => {
+                const itemWidth = galleryItems[0].offsetWidth + 20; // 20px gap
+                galleryTrack.scrollTo({
+                    left: index * itemWidth,
+                    behavior: 'smooth'
+                });
+            });
+            
+            carouselIndicators.appendChild(dot);
+            dots.push(dot);
+        });
+
+        // Update active dot on scroll
+        galleryTrack.addEventListener('scroll', () => {
+            const scrollLeft = galleryTrack.scrollLeft;
+            const itemWidth = galleryItems[0].offsetWidth + 20;
+            const activeIndex = Math.round(scrollLeft / itemWidth);
+            
+            dots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        });
+
+        // Arrow button clicks
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                const itemWidth = galleryItems[0].offsetWidth + 20;
+                galleryTrack.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                const itemWidth = galleryItems[0].offsetWidth + 20;
+                galleryTrack.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            });
+        }
+    }
+
 });

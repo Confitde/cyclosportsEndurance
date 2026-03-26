@@ -143,7 +143,11 @@
                 <p>Moments of triumph, sweat, and glory.</p>
             </div>
             
-            <div class="gallery-grid">
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous Image">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="gallery-grid" id="galleryTrack">
                 <div class="gallery-item fade-up">
                     <img src="images/cycle.jpg" alt="Pristine Drivetrain">
                     <div class="gallery-overlay"><span>Cycle</span></div>
@@ -212,10 +216,15 @@
                  <div class="gallery-item fade-up" style="transition-delay: 0.3s;">
                     <img src="images/grp13.jpg.jpeg" alt="my cycling journey">
                     <div class="gallery-overlay"></div>
+                 </div>
+                
+                
                 </div>
-                
-                
+                <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next Image">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
             </div>
+            <div class="carousel-indicators" id="carouselIndicators"></div>
         </div>
     </section>
 
@@ -302,8 +311,8 @@
 ​Stop dreaming and start doing. At Cyclosports Endurance, we don’t just organize events; we build lifestyles. Join a community of cyclists, trekkers, and fitness enthusiasts dedicated to greatness.
 </p>
             <p>Thanks<br>
-<b>Navnath Kadam
-(Cyclosports Endurance) 🚴‍♂️</b></p>
+<b>Navnath Kadam(2SR)
+    Founder Cyclosports Endurance 🚴‍♂️</b></p>
             <p class="action-text">Click OK to explore and register now!</p>
             <button id="closePopupBtn" class="btn btn-primary pulse-btn">OK</button>
         </div>
