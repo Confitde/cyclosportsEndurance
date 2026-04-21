@@ -106,7 +106,7 @@ h2 span {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: all var(--transition-fast);
     text-align: center;
 }
 
@@ -225,7 +225,7 @@ h2 span {
     width: 25px;
     height: 3px;
     background-color: #fff;
-    transition: all 0.3s ease;
+    transition: all var(--transition-fast);
 }
 
 /* --- Hero Section --- */
