@@ -3,8 +3,8 @@
     --bg-color: #0d0f12; /* Deep dark blue/black */
     --surface-color: #1a1e24; /* Slightly lighter card background */
     --surface-light: #252a33;
-    --primary-color: #ff6a00; /* Vibrant Neon #ff6a00/Green */
-    --primary-hover: #e65c00;
+    --primary-color: #ffa94d; /* Vibrant Neon #ffa94d/Green */
+    --primary-hover: #ff922b;
     --secondary-color: #ff3366; /* Vibrant Pink/Red */
     --text-main: #f0f2f5;
     --text-muted: #9ba3af;
@@ -118,7 +118,7 @@ h2 span {
 .btn-primary:hover {
     background-color: var(--primary-hover);
     transform: scale(1.03) translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 106, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(255, 169, 77, 0.4);
 }
 
 .btn-secondary {
@@ -131,8 +131,8 @@ h2 span {
     border-color: var(--primary-color);
     color: var(--primary-color);
     transform: scale(1.03) translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 106, 0, 0.1);
-    background-color: rgba(255, 106, 0, 0.05);
+    box-shadow: 0 8px 20px rgba(255, 169, 77, 0.1);
+    background-color: rgba(255, 169, 77, 0.05);
 }
 
 /* Pulse Animation for CTA */
@@ -140,9 +140,9 @@ h2 span {
     animation: pulse 2s infinite;
 }
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(255, 106, 0, 0.4); }
-    70% { box-shadow: 0 0 0 15px rgba(255, 106, 0, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 106, 0, 0); }
+    0% { box-shadow: 0 0 0 0 rgba(255, 169, 77, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 169, 77, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 169, 77, 0); }
 }
 
 /* --- Navigation --- */
@@ -315,7 +315,7 @@ h2 span {
 .event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    border-color: rgba(255, 106, 0, 0.4);
+    border-color: rgba(255, 169, 77, 0.4);
 }
 
 .event-image-wrapper {
@@ -670,8 +670,8 @@ h2 span {
 
 .partner-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(255, 106, 0, 0.1);
-    border-color: rgba(255, 106, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(255, 169, 77, 0.1);
+    border-color: rgba(255, 169, 77, 0.4);
 }
 
 .partner-logo {
@@ -685,7 +685,7 @@ h2 span {
 
 .partner-card:hover .partner-logo {
     transform: scale(1.02);
-    filter: drop-shadow(0 0 8px rgba(255, 106, 0, 0.3));
+    filter: drop-shadow(0 0 8px rgba(255, 169, 77, 0.3));
 }
 
 @media (max-width: 768px) {
@@ -1207,7 +1207,7 @@ h2 span {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, #ff6a00, var(--primary-color), #25D366);
+    background: linear-gradient(90deg, #ffa94d, var(--primary-color), #25D366);
     opacity: 0.3;
     transition: opacity var(--transition-fast);
 }
@@ -1224,7 +1224,7 @@ h2 span {
 
 .category-card.highlight-card {
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(255, 106, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(255, 169, 77, 0.1);
     transform: scale(1.05);
     z-index: 1;
 }
@@ -1236,7 +1236,7 @@ h2 span {
 
 .category-card.highlight-card:hover {
     transform: scale(1.08) translateY(-10px);
-    box-shadow: 0 20px 50px rgba(255, 106, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(255, 169, 77, 0.2);
 }
 
 .popular-badge {
@@ -1244,7 +1244,7 @@ h2 span {
     top: -1px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(90deg, #ff6a00, #ff3366);
+    background: linear-gradient(90deg, #ffa94d, #ff3366);
     color: #fff;
     padding: 5px 20px;
     font-size: 0.85rem;
@@ -1252,7 +1252,7 @@ h2 span {
     border-radius: 0 0 12px 12px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    box-shadow: 0 4px 10px rgba(255, 106, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 169, 77, 0.3);
 }
 
 .cat-header {
@@ -1318,10 +1318,10 @@ h2 span {
 }
 
 .btn-package:hover {
-    background: linear-gradient(90deg, #ff6a00, #ff3366);
+    background: linear-gradient(90deg, #ffa94d, #ff3366);
     border-color: transparent;
     color: #fff;
-    box-shadow: 0 5px 15px rgba(255, 106, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 169, 77, 0.3);
 }
 
 .btn-package-highlight {
@@ -1394,7 +1394,7 @@ h2 span {
 .lucky-icon {
     font-size: 3rem;
     margin-bottom: 15px;
-    text-shadow: 0 5px 15px rgba(255, 106, 0, 0.4);
+    text-shadow: 0 5px 15px rgba(255, 169, 77, 0.4);
 }
 
 .lucky-item h4 {
@@ -1513,7 +1513,7 @@ h2 span {
     max-width: 500px;
     width: 90%;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 106, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 169, 77, 0.2);
     transform: scale(0.9);
     transition: transform var(--transition-med);
 }

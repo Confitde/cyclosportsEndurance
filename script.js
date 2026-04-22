@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Main homepage timer (Targeting May 15, 2026 for Coastal Classic)
     const mainTimerElem = document.getElementById('main-timer');
-    const eventTargetDate = new Date("May 15, 2026 08:00:00").getTime();
+    const eventTargetDate = new Date("June 6, 2026 08:00:00").getTime();
 
     if (mainTimerElem) {
         updateTimer(eventTargetDate, ''); // initial call
